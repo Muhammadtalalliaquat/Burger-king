@@ -15,24 +15,45 @@
 .items-borders{
     border-bottom: 1px solid #000000;
 }
+.top-header{
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 5px;
+    left: 28%;
+    z-index: 10;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 16px;
+    position: fixed;
+}
+.top-header>div{
+    /* border:  1px solid red; */
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
 .background-color{
     background-color: #f5ebdc;
+    width: 100%;
+    
 }
 .logo-img{
-    width: 3%;
+    width: 8%;
 }
 .bag-icon{
     width: 16%;
     margin-right: 6px;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
+    text-align: center;
 }
 .sign-up-button{
     background-color: #f13030;
     border: none;
-    width: 10%;
-    height: 40px;
+    width: 15%;
+    height: 38px;
     border-radius: 20px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bolder;
     color: #Ffff;
 }
@@ -42,11 +63,140 @@
 .amount-button{
     background-color: #efefef;
     color: #000000;
-    height: 36px;
-    width: 8%;
+    height: 38px;
+    width: 12%;
+    font-size: 12px;
     border-radius: 20px;
 }
 .amount-button:hover{
     background-color: #e5e900;
     color: #000000;
+}
+
+
+/* hero banner started */
+.market-icon-img{
+    width: 5%;
+    margin-bottom: 6px;
+}
+.delivery-icon-img{
+    width: 5%;
+    margin-bottom: 6px;
+
+}
+.buttom-market-icon{
+    border-radius: 30px;
+    height: 60px;
+    width: 60%;
+    background-color: #f13030;
+    color: #ffff;
+    border: none;
+}
+.buttom-delivery-icon{
+    border-radius: 30px;
+    height: 60px;
+    width: 60%;
+    margin-top: 10px;
+    border: 1px solid #f13030;
+    background-color: #ede3d5;
+    color: #f13030;
+}
+.buttom-delivery-icon:hover{
+    background-color: #fde1d9ed;
+}
+.hero-banner>div{
+    /* border: 1px solid #f13030; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+}
+.hero-box{
+    width: 80%;
+    padding-right: 7%;
+}
+.hero-banner h1{
+    color: rgb(98, 25, 25);
+    font-weight: bold;
+    font-size: 52px;
+    margin-left: 23%;   
+}
+
+.hero-banner{
+    /* border: 1px solid red;   */
+    background-color: #f5ebdc;
+    /* width: 90%; */
+    margin: 0 auto;
+    display: flex;
+}
+
+/* hero banner ended */
+
+
+@media only screen and (max-width: 600px) {
+   
+    .logo-img{
+        width: 56%;
+        padding-left: 22px;
+    }
+    .amount-button{
+        display: none;
+    }
+    .sign-up-button{
+        width: 90%;
+        margin-left: 60px;
+        margin-right: 5px;
+    }
+    .top-header{
+        position: absolute;
+        top: 8.5px;
+        /* left: 225px; */
+        margin-left: 40px;
+    }
+
+    .hero-banner{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero-banner>div{
+        width: 100%;
+        margin-top: 4%;
+    }
+    .hero-box>img{
+        display: none;
+    }
+    .hero-box{
+        background-image: url(images/mobile-herobanner-img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 373px;
+        width: 100%;
+        padding-right: 0;
+    }
+    .hero-banner h1{
+        font-size: 25px;
+        margin-left: 0;
+        position: absolute;
+        top: 6%;
+    }
+    .buttom-market-icon{
+        width: 95%;
+    }
+    .buttom-delivery-icon{
+        width: 95%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .hero-box{
+        background-image: url(images/mobile-herobanner-img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 330px;
+        width: 100%;
+        padding-right: 0;
+    }
 }
