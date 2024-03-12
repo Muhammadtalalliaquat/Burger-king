@@ -1,6 +1,6 @@
-/* *{
-    font-family: monospace;
-} */
+body{
+    background-color: #f5ebdc;
+}
 
 .icon-images{
     width: 1.5%;
@@ -134,6 +134,134 @@
 
 /* hero banner ended */
 
+/* card box started */
+
+.card-box{
+   /* border: 1px solid red; */
+   background-color: #f5ebdc;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 20px;
+   /* width: 90%; */
+   margin: 0 auto;
+}
+.card-img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+.card-box div{
+   /* border: 1px solid #28c712; */
+   background-color: #ffff;
+   margin-top: 10px;
+   width: 45%;
+   border-radius: 20px;
+}
+.card-box div h3{
+    font-weight: bold;
+    font-size: 25px;
+    padding: 25px 25px 0px;
+    color: #512416;
+}
+.card-box div p{
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #512416;    
+}
+.card-box div button{
+    border-radius: 20px;
+    height: 35px;
+    font-size: 15px;
+    margin-top: 4%;
+    margin-bottom: 20px;
+    border: 1px solid #f13030;
+    background-color: #ffff;
+    color: #f13030;
+}
+.card-buttons:hover{
+    background-color: #ede3d5;
+}
+.card-button-1:hover ,.card-button-2:hover,.card-button-4:hover{
+    background-color: #ede3d5;
+}
+.card-button-1{
+    margin-left: 79%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.card-button-2{
+    margin-left: 73%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.card-button-4{
+    margin-left: 71%;
+    font-size: 10px;
+}
+.card-buttons{
+    margin-left: 78%;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+/* card box started */
+
+/* footer started */
+  .footer{
+    /* border: 1px solid red; */
+    background-color: #ebe2d3;
+    display: flex;
+    justify-content: center;
+    gap: 9%;
+    margin-top: 20%;
+  }
+  .footer div{
+    /* border: 1px solid #00ff00; */
+    width: 37%;
+  }
+  .footer div h1,p{
+    font-weight: bolder;
+    margin-top: 50px;
+    color: #512416;
+  }
+  .footer div h1{
+    font-size: 45px;
+  }
+  .footer>div>img{
+    width: 100%;
+    position: relative;
+    bottom: 55px;
+  }
+  .footer-link-img{
+    width: 40%;
+    margin-top: 20px;
+  }
+  .img{
+    margin-left: 25px;
+  }
+  .footer-line{
+    background-color: #512416;
+    height: 60px;
+    position: relative;
+    bottom: 50px;
+  }
+  .footer-line p{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: lighter;
+  }
+  .footer-line a{
+    text-decoration: none;
+    color: #fff;
+    text-decoration: underline;
+  }
+/* footer ended */
 
 @media only screen and (max-width: 600px) {
    
@@ -187,6 +315,59 @@
     .buttom-delivery-icon{
         width: 95%;
         margin-bottom: 30px;
+    }
+
+    .card-box{
+        display: flex;
+        flex-direction: row;
+    }.card-box div{
+        width: 95%;
+    }
+    .card-button-1{
+        margin-left: 76%;
+    }
+    .card-button-2{
+        margin-left: 68%;
+    }
+    .card-button-4{
+        margin-left: 65%;
+    }
+    .card-buttons{
+        margin-left: 73%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer h1{
+        display: none;
+    }
+    .footer div{
+        width: 100%;
+    }
+    .footer-link-img{
+        width: 30%;
+    }
+    .pic{
+        margin-left: 19%;
+    }
+    .footer p{
+        text-align: center;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .footer>div>img{
+        display: none;
+    }
+    .scaner-img{
+        background-image: url(images/mobile-img.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 300px;
+    }
+    .footer-line p{
+       font-size: 10px;
+       padding-top: 24px;
     }
 }
 
