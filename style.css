@@ -36,8 +36,11 @@ body{
 .background-color{
     background-color: #f5ebdc;
     width: 100%;
-    
 }
+.position-absolute{
+    background-color: #f5ebdc;
+    bottom: 90.7%;
+    }
 .logo-img{
     width: 8%;
 }
@@ -263,8 +266,35 @@ body{
   }
 /* footer ended */
 
+  /* menu started */
+
+  .menu-box img{
+      width: 40%;
+      margin-left: 7px;
+  }
+   .menu-box a {
+      text-decoration: none;
+      color: #512416;
+      font-size: 14px;
+   }
+  .menu-box{
+      border-top: 1px solid #b4b4b4;
+      background-color: #ebe2d3;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 10%;
+      padding-top: 10px;
+      width: 100%;
+      bottom: 0;
+      height: 60px;
+  }
+  /* menu ended */
+
+
 @media only screen and (max-width: 600px) {
-   
+    .position-absolute{
+        bottom: 100%;
+    }
     .logo-img{
         width: 56%;
         padding-left: 22px;
