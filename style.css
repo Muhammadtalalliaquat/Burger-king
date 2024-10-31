@@ -177,13 +177,15 @@ body{
 }
 .card-box div button{
     border-radius: 20px;
-    height: 35px;
     font-size: 15px;
     margin-top: 4%;
     margin-bottom: 20px;
     border: 1px solid #f13030;
     background-color: #ffff;
     color: #f13030;
+    width: 80%;
+    margin-left: 50px;
+    padding: 10px;
 }
 .card-buttons:hover{
     background-color: #ede3d5;
@@ -191,26 +193,7 @@ body{
 .card-button-1:hover ,.card-button-2:hover,.card-button-4:hover{
     background-color: #ede3d5;
 }
-.card-button-1{
-    margin-left: 79%;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.card-button-2{
-    margin-left: 73%;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.card-button-4{
-    margin-left: 71%;
-    font-size: 10px;
-}
-.card-buttons{
-    margin-left: 78%;
-    padding-left: 20px;
-    padding-right: 20px;
-    
-}
+
 /* card box started */
 
 /* footer started */
